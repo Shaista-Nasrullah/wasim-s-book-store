@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wasim's Book Store offers a wide selection of books online. Explore our collection of top-selling books like 'Everybook,' classics, and more. Buy your next favorite book from our bookstore online."
+    />
+    <meta
+      name="keywords"
+      content="Book Store, Wasim Book Store, Everybook, Book Store Online, Buy Books Online, Online Bookstore"
+    />
+    <meta name="author" content="Wasim Book Store" />
+    <title>Wasim's Book Store | Book Store Online | Everybook</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="images/Book-store-logo-.png"
+                alt="Wasim's Book Store Logo"
+                width="125px"
+            /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"
+            ><img
+              src="images/cart.png"
+              alt="Shopping Cart"
+              width="30px"
+              height="30px"
+          /></a>
+          <img
+            src="images/menu.png"
+            onclick="menutoggle()"
+            class="menu-icon"
+            alt="Menu"
+          />
+        </div>
+
+        <!-- Hero Section -->
+        <div class="row">
+          <div class="col-2">
+            <h1>Your Favorite Online Book Store</h1>
+            <p>
+              Welcome to Wasim's Book Store, where every book ignites your
+              imagination. Browse our vast collection of books online and
+              discover new stories that will inspire you!
+            </p>
+            <a href="#featured" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="images/book-store.png" alt="Books available in store" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+      <div class="small-container">
+        <h2>Our Top Books</h2>
+        <div class="row">
+          <div class="col-3 featured">
+            <img
+              src="images/rich_dad_poor_dad_by_robert.jpg"
+              alt="Rich Dad Poor Dad by Robert"
+            />
+          </div>
+          <div class="col-3 featured">
+            <img
+              src="images/Anna Karenina by Tolstoy.jpg"
+              alt="Anna Karenina by Tolstoy"
+            />
+          </div>
+          <div class="col-3 featured">
+            <img
+              src="images/buy-sell-like-crazy.jpg"
+              alt="Buy Sell Like Crazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4 four">
+          <a href="product-details.html"
+            ><img
+              src="images/the-magic-of-thinking-big.jpg"
+              alt="The Magic of Thinking Big"
+          /></a>
+          <h4><a href="product-details.html">The Magic of Thinking Big</a></h4>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4 four">
+          <img src="images/think-and-grow-rich.jpg" alt="Think and Grow Rich" />
+          <h4>Think and Grow Rich</h4>
+          <p>$75.00</p>
+        </div>
+        <div class="col-4 four">
+          <img src="images/80-20-principle.jpg" alt="The 80/20 Principle" />
+          <h4>The 80/20 Principle</h4>
+          <p>$45.00</p>
+        </div>
+        <div class="col-4 four">
+          <img
+            src="images/The-8th-Habit.jfif"
+            alt="The 8th Habit by Stephen Covey"
+          />
+          <h4>The 8th Habit</h4>
+          <p>$55.00</p>
+        </div>
+      </div>
+
+      <h2 class="title">Latest Arrivals</h2>
+      <div class="row">
+        <div class="col-4 four">
+          <img
+            src="images/how-to-make-friends-and-influence-people.jpg"
+            alt="How to Win Friends and Influence People"
+          />
+          <h4>How to Win Friends and Influence People</h4>
+          <p>$95.00</p>
+        </div>
+        <div class="col-4 four">
+          <img
+            src="images/how-to-talk-to-anyone.jpg"
+            alt="How to Talk to Anyone"
+          />
+          <h4>How to Talk to Anyone</h4>
+          <p>$55.00</p>
+        </div>
+        <div class="col-4 four">
+          <img
+            src="images/7-habits-of-highly-effective-people.jpg"
+            alt="7 Habits of Highly Effective People"
+          />
+          <h4>7 Habits of Highly Effective People</h4>
+          <p>$30.00</p>
+        </div>
+        <div class="col-4 four">
+          <img
+            src="images/communication-skills.jpg"
+            alt="Communication Skills"
+          />
+          <h4>Communication Skills</h4>
+          <p>$120.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offer -->
+    <section class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img
+              src="images/buy-sell-like-crazy-.png"
+              class="offer-img"
+              alt="Buy Sell Like Crazy"
+            />
+          </div>
+          <div class="col-2">
+            <p>Exclusively Available at Wasim's Book Store</p>
+            <h1>Buy Sell Like Crazy</h1>
+            <small>
+              Discover how to boost your sales with this bestseller. Now
+              available at a 40% discount at Wasim's Book Store.
+            </small>
+            <br />
+            <a href="#" class="btn">Buy Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------testimonial (SEO-friendly)-------------->
+    <div class="testimonial">
+      <div class="small-container">
+        <h2 class="title">Customer Reviews of Wasim Book Store</h2>
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              "Wasim's Book Store is my go-to online bookstore. The selection of
+              books, especially <strong>Rich Dad Poor Dad</strong>, is
+              incredible, and the service is impeccable. It’s easy to browse and
+              purchase any book from their <strong>bookstore online</strong>."
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="images/user-1.png" alt="Customer Review - Sean Parker" />
+            <h3>Sean Parker</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              "I bought <strong>Think and Grow Rich</strong> from
+              <strong>Everybook</strong>, the most popular book in their
+              <strong>bookstore</strong>. I was impressed by the swift delivery
+              and great customer support!"
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <img src="images/user-2.png" alt="Customer Review - Mike Smith" />
+            <h3>Mike Smith</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              "I love shopping for books at <strong>Wasim's Book Store</strong>.
+              They have a wide variety of books like
+              <strong>The 7 Habits of Highly Effective People</strong>. Their
+              <strong>online bookstore</strong> is user-friendly and perfect for
+              any book lover!"
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img
+              src="images/user-3.png"
+              alt="Customer Review - Sarah Johnson"
+            />
+            <h3>Sarah Johnson</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------footer (SEO-friendly)-------------->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col1">
+              <h3>Download Our App</h3>
+              <p>
+                Download our app for Android and iOS for an enhanced shopping
+                experience at Wasim's <strong>online bookstore</strong>.
+              </p>
+              <div class="app-logo">
+                <img
+                  src="images/play-store.png"
+                  alt="Download from Play Store"
+                />
+                <img src="images/app-store.png" alt="Download from App Store" />
+              </div>
+            </div>
+            <div class="footer-col2">
+              <img
+                src="images/Book-store-logo-.png"
+                alt="Wasim Book Store Logo"
+              />
+              <p>
+                At Wasim’s Book Store, our mission is to offer a vast selection
+                of books, including the most popular titles, bestsellers, and
+                timeless classics, at unbeatable prices. Visit our
+                <strong>bookstore online</strong> to find your next great read.
+              </p>
+            </div>
+            <div class="footer-col3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Books</a></li>
+                <li><a href="">Our services</a></li>
+                <li><a href="account.html">Account</a></li>
+              </ul>
+            </div>
+            <div class="footer-col4">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">
+            &copy; 2024 Wasim's Book Store | All Rights Reserved |
+            <strong>Book Store Online</strong> | <strong>Everybook</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script for Menu Toggle -->
+    <script>
+      function menutoggle() {
+        const menuItems = document.getElementById("MenuItems");
+        menuItems.style.maxHeight =
+          menuItems.style.maxHeight === "0px" ? "200px" : "0px";
+      }
+    </script>
+  </body>
+</html>

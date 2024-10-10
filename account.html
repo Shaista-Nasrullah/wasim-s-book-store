@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wasim's Book Store | Buy Books Online | Every Book Available</title>
+    <meta
+      name="description"
+      content="Welcome to Wasim's Book Store, your one-stop online book store. Buy books online from a wide range of categories including fiction, non-fiction, academic books, and more."
+    />
+    <meta
+      name="keywords"
+      content="Book store, Wasim Book Store, buy books online, every book, online book store"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="images/Book-store-logo-.png"
+              width="125px"
+              alt="Wasim's Book Store Logo"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="images/cart.png" width="30px" height="30px" alt="Cart"
+        /></a>
+        <img
+          src="images/menu.png"
+          onclick="menutoggle()"
+          class="menu-icon"
+          alt="Menu icon"
+        />
+      </div>
+    </div>
+
+    <!--------------Cart Items details--------------->
+    <div class="account-page">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-2">
+            <img
+              src="images/book-store.png"
+              width="100%"
+              alt="Online Book Store Image"
+            />
+          </div>
+
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="indicator" />
+              </div>
+
+              <form id="LoginForm">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  aria-label="Username"
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  aria-label="Password"
+                />
+                <button type="submit" class="btn">Login</button>
+                <a href="">Forgot password</a>
+              </form>
+
+              <form id="RegForm">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  aria-label="Username"
+                />
+                <input type="email" placeholder="Email" aria-label="Email" />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  aria-label="Password"
+                />
+                <button type="submit" class="btn">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------Footer--------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col1">
+            <h3>Download Our App</h3>
+            <p>
+              Download the app for Android and iOS mobile phones to shop for
+              books online at Wasim's Book Store.
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="Download on Play Store" />
+              <img src="images/app-store.png" alt="Download on App Store" />
+            </div>
+          </div>
+          <div class="footer-col2">
+            <img
+              src="images/Book-store-logo-.png"
+              alt="Wasim's Book Store Logo"
+            />
+            <p>
+              Wasim's Book Store is dedicated to providing the joy of reading to
+              everyone. We offer a wide selection of books, from fiction to
+              academic titles, ensuring everyone finds something they love.
+            </p>
+          </div>
+          <div class="footer-col3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2024 - Wasim's Book Store</p>
+      </div>
+    </div>
+
+    <!-------------JavaScript for toggle menu-------------->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <!------------------- form toggle ----------->
+    <script>
+      var LoginForm = document.getElementById("LoginForm");
+      var RegForm = document.getElementById("RegForm");
+      var Indicator = document.getElementById("indicator");
+
+      function register() {
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+      }
+      function login() {
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+      }
+    </script>
+  </body>
+</html>

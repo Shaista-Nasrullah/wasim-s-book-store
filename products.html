@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wasim Book Store - Your go-to book store for buying books online. Explore our vast collection of books including Everybook editions. Visit our online store today!"
+    />
+    <meta
+      name="keywords"
+      content="Book Store, Wasim Book Store, Everybook, Book Store Online, Buy Books, Online Book Store"
+    />
+    <meta name="author" content="Wasim's Book Store" />
+    <title>Wasim Book Store | Online Book Store | Everybook</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="images/Book-store-logo-.png"
+              width="125px"
+              alt="Wasim's Book Store Logo"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Books</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="account.html">My Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="images/cart.png" width="30px" height="30px" alt="Cart"
+        /></a>
+        <img
+          src="images/menu.png"
+          onclick="menutoggle()"
+          class="menu-icon"
+          alt="Menu"
+        />
+      </div>
+    </div>
+
+    <!----------------- title -------------->
+    <div class="small-container">
+      <div class="row row-2">
+        <h1>All Books</h1>
+        <p>
+          Explore our wide range of books available at Wasim's Book Store Online
+        </p>
+        <select>
+          <option>Sort by Default</option>
+          <option>Sort by Price</option>
+          <option>Sort by Popularity</option>
+          <option>Sort by Rating</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/the-magic-of-thinking-big.jpg" alt="The Magic of Thinking Big - Everybook">
+          </a>
+          <h4><a href="product-details.html">The Magic of Thinking Big</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/think-and-grow-rich.jpg" alt="Think and Grow Rich - Everybook">
+          </a>
+          <h4><a href="product-details.html">Think and Grow Rich</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$75.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/80-20-principle.jpg" alt="The 80/20 Principle - Everybook">
+          </a>
+          <h4><a href="product-details.html">The 80/20 Principle</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$45.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/The-8th-Habit.jfif" alt="The 8th Habit - Everybook">
+          </a>
+          <h4><a href="product-details.html">The 8th Habit</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$55.00</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/rich_dad_poor_dad_by_robert.jpg" alt="Rich Dad Poor Dad - Everybook">
+          </a>
+          <h4><a href="product-details.html">Rich Dad Poor Dad</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$95.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/The-total-money-makeover.jpg" alt="The Total Money Makeover - Everybook">
+          </a>
+          <h4><a href="product-details.html">The Total Money Makeover</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$55.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/how-to-make-friends-and-influence-people.jpg" alt="How to Win Friends and Influence People - Everybook">
+          </a>
+          <h4><a href="product-details.html">How to Win Friends and Influence People</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$30.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/good-to-great1.jpg" alt="Good to Great - Everybook">
+          </a>
+          <h4><a href="product-details.html">Good to Great</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$120.00</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/zero-to-one.jfif" alt="Zero to One - Everybook">
+          </a>
+          <h4><a href="product-details.html">Zero to One</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$135.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/7-habits-of-highly-effective-people.jpg" alt="The 7 Habits of Highly Effective People - Everybook">
+          </a>
+          <h4><a href="product-details.html">The 7 Habits of Highly Effective People</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/how-to-talk-to-anyone.jpg" alt="How to Talk to Anyone - Everybook">
+          </a>
+          <h4><a href="product-details.html">How to Talk to Anyone</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$55.00</p>
+        </div>
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="images/communication-skills.jpg" alt="Communication Skills - Everybook">
+          </a>
+          <h4><a href="product-details.html">Communication Skills</a></h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$75.00</p>
+        </div>
+      </div>
+      
+
+       
+
+        <!-- Other books listings go here with correct image titles and alt texts -->
+      </div>
+
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
+    </div>
+
+    <!----------Footer--------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col1">
+            <h3>Download Our App</h3>
+            <p>
+              Download the Wasim Book Store app for Android and iOS for
+              convenient online shopping.
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="Google Play Store" />
+              <img src="images/app-store.png" alt="Apple App Store" />
+            </div>
+          </div>
+
+          <div class="footer-col2">
+            <img
+              src="images/Book-store-logo-.png"
+              alt="Wasim Book Store Logo"
+            />
+            <p>
+              Welcome to Wasim's Book Store. Our mission is to bring the joy of
+              reading to everyone, with a wide range of books including
+              Everybook editions.
+            </p>
+          </div>
+
+          <div class="footer-col3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate Program</li>
+            </ul>
+          </div>
+
+          <div class="footer-col4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2024 - Wasim's Book Store</p>
+      </div>
+    </div>
+
+    <!-------------js for toggle menu-------------->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

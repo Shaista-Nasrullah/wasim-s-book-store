@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wasim's Book Store - Your online book store offering a wide selection of books including The Total Money Makeover, How to Make Friends and Influence People, and more."
+    />
+    <meta
+      name="keywords"
+      content="Book store, Wasim Book Store, Book Store Online, Everybook, Buy Books Online, The Total Money Makeover, How to Make Friends and Influence People, Books, Online Shopping"
+    />
+    <meta name="author" content="Wasim's Book Store" />
+    <title>My Cart - Wasim's Book Store | Your Online Book Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="images/Book-store-logo-.png"
+              alt="Wasim's Book Store Logo"
+              width="125px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Books</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img
+            src="images/cart.png"
+            alt="Shopping Cart"
+            width="30px"
+            height="30px"
+        /></a>
+        <img
+          src="images/menu.png"
+          alt="Menu Icon"
+          onclick="menutoggle()"
+          class="menu-icon"
+        />
+      </div>
+    </div>
+
+    <!--------------Cart Items details--------------->
+    <div class="small-container cart-page">
+      <h1>Shopping Cart - Wasim's Book Store</h1>
+      <p>
+        Your online book store for purchasing books like The Total Money
+        Makeover, How to Make Friends and Influence People, and Communication
+        Skills.
+      </p>
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img
+                src="images/The-total-money-makeover.jpg"
+                alt="The Total Money Makeover Book"
+              />
+              <div>
+                <p>The Total Money Makeover</p>
+                <small>Price: $50.00</small><br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$50.00</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img
+                src="images/how-to-make-friends-and-influence-people.jpg"
+                alt="How to Make Friends and Influence People Book"
+              />
+              <div>
+                <p>How to Make Friends and Influence People</p>
+                <small>Price: $75.00</small><br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$75.00</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img
+                src="images/communication-skills.jpg"
+                alt="Communication Skills Book"
+              />
+              <div>
+                <p>Communication Skills</p>
+                <small>Price: $75.00</small><br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$75.00</td>
+        </tr>
+      </table>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$200.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$35.00</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$235.00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="total-price">
+        <a href="#" class="btn">Proceed to Checkout &#8594;</a>
+      </div>
+    </div>
+
+    <!----------Footer--------------->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col1">
+            <h3>Download Our App</h3>
+            <p>
+              Shop books from Wasim's Book Store online, anywhere and anytime
+              through our mobile app available on Android and iOS.
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="Play Store Logo" />
+              <img src="images/app-store.png" alt="App Store Logo" />
+            </div>
+          </div>
+          <div class="footer-col2">
+            <img
+              src="images/Book-store-logo-.png"
+              alt="Wasim's Book Store Logo"
+            />
+            <p>
+              Wasim's Book Store brings the joy of reading to your fingertips.
+              From popular titles like The Total Money Makeover and How to Make
+              Friends and Influence People to the latest bestsellers, we have
+              every book you need.
+            </p>
+          </div>
+          <div class="footer-col3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2024 - Wasim's Book Store</p>
+      </div>
+    </div>
+
+    <!-------------js for toggle menu-------------->
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
