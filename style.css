@@ -332,6 +332,11 @@ nav ul li a{
         
         flex-basis: 100%;
     }
+    .logo img{
+        border-radius: 10px;
+        width: 120px;
+        height: 70px;
+    }
 }
 
 /*----------All Product page------------*/
